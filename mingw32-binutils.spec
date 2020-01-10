@@ -1,6 +1,6 @@
 Name:           mingw32-binutils
 Version:        2.20.1
-Release:        2%{?dist}.2
+Release:        3%{?dist}.2
 Summary:        MinGW Windows binutils
 
 ExclusiveArch:	x86_64
@@ -74,6 +74,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+  Rebuild package.
+  Related: rhbz#719866
+
 * Wed Dec 22 2010 Andrew Beekhof <abeekhof@redhat.com> - 2.20.1-2.2
 - Only build mingw packages on x86_64
   Related: rhbz#658833
